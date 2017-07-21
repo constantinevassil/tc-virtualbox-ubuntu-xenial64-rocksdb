@@ -80,7 +80,8 @@ ubuntu@tc-rocksdb:~$ sudo apt-get install libsnappy-dev
 compiling RocksDB static library in release mode:
 
 ```bash
-make static_lib 
+ubuntu@tc-rocksdb:~$ cd /vagrant/rocksdb
+ubuntu@tc-rocksdb:/vagrant/rocksdb$ make static_lib 
 ```
 
 
