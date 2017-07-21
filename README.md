@@ -1,6 +1,6 @@
 # tc-ubuntu-xenial64-rocksdb
 
-Ubuntu 14.10 Vagrant Development machine for RocksDB development
+Ubuntu 14.10 Vagrant Development machine for RocksDB development.
 
 ## Getting started
 
@@ -74,6 +74,11 @@ compiling RocksDB static library in release mode:
 ```bash
 ubuntu@tc-rocksdb:~$ cd /vagrant/rocksdb
 ubuntu@tc-rocksdb:/vagrant/rocksdb$ make static_lib 
+
+...
+ubuntu@tc-rocksdb:/vagrant/rocksdb$ ar: creating librocksdb.a
 ```
+
+The resulting RocksDB static library is in rocksdb folder in your host machine.
 
 
