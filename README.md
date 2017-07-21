@@ -100,13 +100,15 @@ ubuntu@tc-rocksdb:/vagrant$
 go version go1.8.3 linux/amd64
 ```
 
-### The GOPATH environment variable
+### Set the GOPATH environment variable
 
 The GOPATH environment variable specifies the location of your workspace. 
 
 ```bash
 export GOPATH=/vagrant/mygo
 ```
+
+### Compile gorocksdb, a Go wrapper for RocksDB
 
 ```bash
 CGO_CFLAGS="-I/vagrant/rocksdb/include" \
