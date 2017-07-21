@@ -58,4 +58,7 @@ inside Docker which will make it large, we are building it here and the using on
 git clone https://github.com/facebook/rocksdb.git
 ```
 
+```bash
+sudo apt-get update && sudo apt-get dist-upgrade
+```
 
