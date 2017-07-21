@@ -59,6 +59,10 @@ git clone https://github.com/facebook/rocksdb.git
 ```
 
 ```bash
-sudo apt-get update && sudo apt-get dist-upgrade
+vagrant ssh tc-rocksdb
+```
+
+```bash
+ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
