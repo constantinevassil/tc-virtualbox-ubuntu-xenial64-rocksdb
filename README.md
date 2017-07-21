@@ -106,5 +106,10 @@ The GOPATH environment variable specifies the location of your workspace.
 export GOPATH=/vagrant/mygo
 ```
 
+```bash
+CGO_CFLAGS="-I/vagrant/rocksdb/include" \
+CGO_LDFLAGS="-L/vagrant/rocksdb -lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy -llz4 -lzstd" \
+  go get github.com/tecbot/gorocksdb  
+```
 
 
