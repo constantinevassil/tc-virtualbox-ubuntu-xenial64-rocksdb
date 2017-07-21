@@ -7,7 +7,7 @@ Ubuntu 14.10 Vagrant Development machine for RocksDB development
 ```bash
 git clone https://github.com/topconnector/tc-ubuntu-xenial64-rocksdb.git
 cd tc-ubuntu-xenial64-rocksdb
-cd single-machine
+cd tc-ubuntu-xenial64-rocksdb
 ```
 
 You must have the following installed:
@@ -46,4 +46,16 @@ You must have the following installed:
 ```bash
     vagrant up
 ```
+
+## Compiling rocksdb for Ubuntu
+
+In order to use rockdb in Kubernetes we need rocksdb compiled static library in Docker container. Rather compiling
+inside Docker which will make it large, we are building it here and the using only the librarty in a different container.
+
+### Get the latest rockdb repositoty:
+
+```bash
+git clone https://github.com/facebook/rocksdb.git
+```
+
 
