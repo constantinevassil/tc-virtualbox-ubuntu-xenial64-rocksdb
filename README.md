@@ -67,19 +67,8 @@ Update packages:
 ```bash
 ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
 sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev 
-
-```
-Install gflags. 
-
-```bash
-ubuntu@tc-rocksdb:~$ sudo apt-get install libgflags-dev
 ```
 
-Install snappy. 
-
-```bash
-ubuntu@tc-rocksdb:~$ sudo apt-get install libsnappy-dev
-```
 compiling RocksDB static library in release mode:
 
 ```bash
