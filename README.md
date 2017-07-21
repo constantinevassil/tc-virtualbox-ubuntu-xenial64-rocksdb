@@ -5,8 +5,8 @@ Ubuntu 14.10 Vagrant Development machine for RocksDB development.
 ## Getting started
 
 ```bash
+cd $HOME/Desktop
 git clone https://github.com/topconnector/tc-ubuntu-xenial64-rocksdb.git
-cd tc-ubuntu-xenial64-rocksdb
 cd tc-ubuntu-xenial64-rocksdb
 ```
 
@@ -66,7 +66,7 @@ Update packages:
 
 ```bash
 ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
-sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev 
+ubuntu@tc-rocksdb:~$ sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev  zlib1g-dev libbz2-dev liblz4-dev libzstd-dev
 ```
 
 compiling RocksDB static library in release mode:
@@ -111,5 +111,7 @@ CGO_CFLAGS="-I/vagrant/rocksdb/include" \
 CGO_LDFLAGS="-L/vagrant/rocksdb -lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy -llz4 -lzstd" \
   go get github.com/tecbot/gorocksdb
 ```
+The generated library is stored on the Mac host:
 
+$HOME/Desktop/tc-ubuntu-xenial64-rocksdb/mygo/pkg/linux_amd64/github.com/tecbot/gorocksdb.a
 
