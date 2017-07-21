@@ -61,10 +61,13 @@ git clone https://github.com/facebook/rocksdb.git
 ```bash
 vagrant ssh tc-rocksdb
 ```
-Ubuntu 14.04 comes with gcc 4.8.2, no need to update.
+
+Update packages:
 
 ```bash
 ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev 
+
 ```
 Install gflags. 
 
