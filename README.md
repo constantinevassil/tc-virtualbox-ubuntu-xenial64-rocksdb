@@ -61,8 +61,26 @@ git clone https://github.com/facebook/rocksdb.git
 ```bash
 vagrant ssh tc-rocksdb
 ```
+Ubuntu 14.04 comes with gcc 4.8.2, no need to update.
 
 ```bash
 ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
 ```
+Install gflags. 
+
+```bash
+ubuntu@tc-rocksdb:~$ sudo apt-get install libgflags-dev
+```
+
+Install snappy. 
+
+```bash
+ubuntu@tc-rocksdb:~$ sudo apt-get install libsnappy-dev
+```
+compiling RocksDB static library in release mode:
+
+```bash
+make static_lib 
+```
+
 
