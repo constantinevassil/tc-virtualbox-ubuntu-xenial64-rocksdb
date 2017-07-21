@@ -81,4 +81,13 @@ ubuntu@tc-rocksdb:/vagrant/rocksdb$ ar: creating librocksdb.a
 
 The resulting RocksDB static library librocksdb.a (343 MB) is in rocksdb folder in your host machine.
 
+Install latest Golang:
+
+...
+cd ..
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt-get update
+sudo apt-get install golang-go
+```
+
 
