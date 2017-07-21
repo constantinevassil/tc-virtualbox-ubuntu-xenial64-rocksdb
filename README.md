@@ -79,7 +79,9 @@ ubuntu@tc-rocksdb:/vagrant/rocksdb$ make static_lib
 ubuntu@tc-rocksdb:/vagrant/rocksdb$ ar: creating librocksdb.a
 ```
 
-The resulting RocksDB static library librocksdb.a (343 MB) is in rocksdb folder in your host machine.
+The resulting RocksDB static library librocksdb.a (343 MB) is in 
+$HOME/Desktop/tc-ubuntu-xenial64-rocksdb/rocksdb 
+folder in your host machine.
 
 Install latest Golang:
 
