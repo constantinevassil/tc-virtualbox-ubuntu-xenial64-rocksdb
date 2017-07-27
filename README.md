@@ -6,8 +6,8 @@ Ubuntu 14.10 Vagrant Development machine for RocksDB development with Golang.
 
 ```bash
 cd $HOME/Desktop
-git clone https://github.com/topconnector/tc-ubuntu-xenial64-rocksdb.git
-cd tc-ubuntu-xenial64-rocksdb
+git clone https://github.com/topconnector/tc-virtualbox-ubuntu-xenial64-rocksdb.git
+cd tc-virtualbox-ubuntu-xenial64-rocksdb
 ```
 
 You must have the following installed:
@@ -118,4 +118,3 @@ CGO_LDFLAGS="-L/vagrant/rocksdb -lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy -llz4 
 The generated library (1 MB) is stored on the Mac host:
 
 $HOME/Desktop/tc-ubuntu-xenial64-rocksdb/mygo/pkg/linux_amd64/github.com/tecbot/gorocksdb.a
-
